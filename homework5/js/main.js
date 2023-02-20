@@ -43,10 +43,9 @@ console.log(UserArrMinus);
 
 
 function ConstructorFigure(sideA,sideB) {
- 
   this.sideA = sideA;
   this.sideB = sideB;
-  console.log(`площать фигуры равна = ${this.sideA * this.sideB} см, так же Диагональ фигуры равна = ${Math.sqrt(Math.pow(this.sideA, 2) + Math.pow(this.sideB, 2))} , а так же периметр фигуры = ${(this.sideA * 2) + (this.sideB * 2) } `);
+  // console.log(`площать фигуры равна = ${this.sideA * this.sideB} см, так же Диагональ фигуры равна = ${Math.sqrt(Math.pow(this.sideA, 2) + Math.pow(this.sideB, 2))} , а так же периметр фигуры = ${(this.sideA * 2) + (this.sideB * 2) } `);
  return
 }
 
@@ -54,8 +53,8 @@ function ConstructorFigure(sideA,sideB) {
 
 
 ConstructorFigure.prototype.figures = function () {
-  console.log(`площать фигуры равна = ${this.sideA * this.sideB} см, так же Диагональ фигуры равна = ${Math.sqrt(Math.pow(this.sideA, 2) + Math.pow(this.sideB, 2)) } , а так же периметр фигуры = ${(this.sideA * 2) + (this.sideB * 2) } `);
-  return
+  return  `площать фигуры равна = ${this.sideA * this.sideB} см, так же Диагональ фигуры равна = ${Math.sqrt(Math.pow(this.sideA, 2) + Math.pow(this.sideB, 2)) } , а так же периметр фигуры = ${(this.sideA * 2) + (this.sideB * 2) } `;
+
 }
 
 const Rectangle = new ConstructorFigure(4,5)
